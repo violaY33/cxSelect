@@ -1,0 +1,38 @@
+<!DocType <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>cxSelect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <!-- <script src="jquery.cxselect.js"></script> -->
+    <script src="./../js/jquery.cxselect2.js"></script>
+</head>
+
+<body>
+    <div id="custom_data">
+        <div class="select-box first" style="display: none">
+            <div class="select-value"></div>
+        </div>
+        <div class="select-box second" style="display: none">
+            <div class="select-value"></div>
+        </div>
+        <div class="select-box third" style="display: none">
+            <div class="select-value"></div>
+        </div>
+    </div>
+
+
+    <script>
+        $('#custom_data').cxSelect({
+            selects: ['first', 'second', 'third'],
+            url: './../js/cityData.json',
+            emptyStyle: 'none'
+        });
+    </script>
+</body>
+
+</html>
